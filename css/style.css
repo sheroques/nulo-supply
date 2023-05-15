@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  img {
+    width: 200px; 
+    height: 200px;
+  }
+  
+
+  header, footer{
+    flex-basis: 100%;
+  }
+
+  header{
+    display: flex;
+    column-gap: 20px;
+   
+  }
+
+.search_container {
+        width: 45vw;
+    }
+
+.search_title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+.search_input {
+        width: 100%;
+        padding: 12px 24px;
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        color: #575756;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+.search_input::placeholder {
+            color: rgba(87, 87, 86, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+.search_input:hover,
+        .search_input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+         
+          nav {
+            width: 100%;
+            margin: 10px 0;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            white-space: nowrap;
+            background: white;
+            box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
+          }
+          
+          a {
+            display: inline-block;
+            z-index: 10;
+            width: 20%;
+            padding: 1em 20px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+          }
+
+          nav.full {
+            font-weight: bold;
+            background: #111;
+            color: white;
+          }
+         
+          .card {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 120ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 0.5em;
+            padding-bottom: 3.4em;
+          }
+          
+          .card::after {
+            content: "Comprar";
+            padding-top: 1.25em;
+            padding-left: 1.25em;
+            position: absolute;
+            left: 0;
+            bottom: -60px;
+            background: black;
+            color: #fff;
+            height: 2.5em;
+            width: 90%;
+            transition: all 200ms;
+            font-weight: 600;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+          
+          .card .title {
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 1.875em;
+            font-weight: 400;
+            color: #000;
+          }
+          
+          .card .price {
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 0.625em;
+            color: red;
+          }
+          
+          .card:hover::after {
+            bottom: 0;
+            opacity: 1;
+          }
+          
+          .card:active {
+            transform: scale(0.98);
+          }
+          
+          .card:active::after {
+            content: "No carrinho!";
+            height: 3.125em;
+          }
+          
+          .text {
+            max-width: 55px;
+          }
+          
+          .image {
+            background: rgb(241, 241, 241);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+          }
+
+          .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 5%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+          
+          }
+          
+          footer {
+            position: fixed;
+            bottom: 0;
+            background-color: #ffffff;
+            width: 100%;
+            height: 50px ;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+          }
+          
+          header img{
+            width: 200px;
+            height: 73px;
+            float: left;
+            display: flex;
+            align-items: self-end;
+            margin: 0 10% 0% 4%;
+          }
+
+          a:hover{
+            background-color: #8e8e8e;
+          }
+
+          .cart-icon {
+            font-size: 24px;
+            color: #000; /* Altere a cor conforme necessário */
+            margin-right: 10px;
+            margin-top: 30px;
+            margin-left: 400px
+          }
+          
+          .profile-icon {
+            font-size: 24px;
+            color: #000; /* Altere a cor conforme necessário */
+            margin-right: 100px;
+            margin-top: 30px;
+            margin-left: 00px;
+          }

@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../nulo-supply/css/style.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <title>Login ou Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Login-NULØ </title>
 </head>
+
 <body>
+    <main class="master-container">
+        <main class="loginPage">
+            <div class="container">
+                <div class="carta">
+                    <a href="#" onclick="history.go(-1);" class="back-icon">
+                        <i class="fas fa-chevron-left"></i>
+                      </a>
+                      
+                    <a class="login">Login</a>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span class="user">Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Senha</span>
+                    </div>
+                    <button class="link-button" onclick="window.location.href='index.html'">Acessar</button>
+                    <button class="link-button" onclick="window.location.href='signup.html'">Cadastre-se</button>
+                </div>
+            </div>
+        </main>
+        <section class="background-login"></section>
+    </main>
+
 </body>
+
 </html>

@@ -8,37 +8,8 @@
   <link rel="stylesheet" type="text/css" href="../nulo-supply/css/style.css" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>NULØ Supply</title>
-
+  <link rel="shortcut icon" href="img/Nulo-Logo.png">
 </head>
-<script>
-  let slideIndex = 1;
-  currentSlide(1);
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
-</script>
 
 <body>
   <header>
@@ -47,102 +18,139 @@
       <p class="search_title"></p>
       <input class="search_input" type="text" placeholder="Encontre um produto">
     </div>
-    <section class="icon-container">
-     
+    <div class="icon-container">
       <div class="cart-icon">
         <i class="fas fa-shopping-cart"></i>
       </div>
       <a href="login.html" class="profile-icon">
         <i class="fas fa-user"></i>
       </a>
-      
-    </section>
+    </div>
   </header>
 
   <nav class="panel">
-    <a href="">HOME</a>
-    <a href="">CAMISETAS</a>
-    <a href="">CONTATO</a>
-    <a href="">SOBRE NÓS</a>
+    <a href="#section1">HOME</a>
+    <a href="#section2">CAMISETAS</a>
+    <a href="#section3">CONTATO</a>
+    <a href="#section4">SOBRE NÓS</a>
   </nav>
-
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <section class="img-slides background-slides-1"></section>
+  <section>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/aboutimg.jpeg">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/img3.jpeg">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/img4.jpeg">
+      </div>
     </div>
+    <br>
 
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <section class="img-slides background-slides-2"></section>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <section class="img-slides background-slides-3"></section>
-    </div>
-
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  </div>
+  </section id="section1">
+  <script>
+    let slideIndex = 0;
+    showSlides();
 
-  <div class="card-container">
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo1.png" alt="camiseta branca com estampa de lua preta "><span
-          class="text"></span></div>
-      <span class="title">Camiseta Nulo White moon</span>
-      <span class="price">R$70,00</span>
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <section id="section2">
+    <div class="card-container">
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo1.png" alt="camiseta branca com estampa de lua preta "><span
+            class="text"></span></div>
+        <span class="title">Camiseta Nulo White moon</span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo2.png"
+            alt="camiseta branca com a logo escrito nulo na cor preta"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo White </span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo3.png"
+            alt="camiseta preta com estampa de sol na cor branca"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo Black Sun</span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo4.png"
+            alt="camiseta preta com a logo escrito nulo em branco"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo Black</span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo1.png" alt="camiseta branca com estampa de lua preta "><span
+            class="text"></span></div>
+        <span class="title">Camiseta Nulo White moon</span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo2.png"
+            alt="camiseta branca com a logo escrito nulo na cor preta"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo White </span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo3.png"
+            alt="camiseta preta com estampa de sol na cor branca"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo Black Sun</span>
+        <span class="price">R$70,00</span>
+      </div>
+      <div class="card">
+        <div class="image"><img src="../nulo-supply/img/nulo4.png"
+            alt="camiseta preta com a logo escrito nulo em branco"><span class="text"></span></div>
+        <span class="title">Camiseta Nulo Black</span>
+        <span class="price">R$70,00</span>
+      </div>
     </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo2.png"
-          alt="camiseta branca com a logo escrito nulo na cor preta"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo White </span>
-      <span class="price">R$70,00</span>
+  </section>
+
+  <section id="section3">
+    <div class="image-content">
+      <img src="../nulo-supply/img/img5.jpeg">
     </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo3.png"
-          alt="camiseta preta com estampa de sol na cor branca"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo Black Sun</span>
-      <span class="price">R$70,00</span>
+    <div class="contact-page">
+      <div class="contact-text">
+        <h1>Entre em contato</h1>
+        <p>Nosso time está disponível de segunda a sábado das 08h às 20h, exceto feriados.</p>
+        <p>Desculpe-nos, nosso tempo de resposta está acima do esperado.</p>
+        <a href="" class="email-icon"></a>
+        <i class="fas fa-envelope"></i>
+      </div>
     </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo4.png"
-          alt="camiseta preta com a logo escrito nulo em branco"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo Black</span>
-      <span class="price">R$70,00</span>
-    </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo1.png" alt="camiseta branca com estampa de lua preta "><span
-          class="text"></span></div>
-      <span class="title">Camiseta Nulo White moon</span>
-      <span class="price">R$70,00</span>
-    </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo2.png"
-          alt="camiseta branca com a logo escrito nulo na cor preta"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo White </span>
-      <span class="price">R$70,00</span>
-    </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo3.png"
-          alt="camiseta preta com estampa de sol na cor branca"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo Black Sun</span>
-      <span class="price">R$70,00</span>
-    </div>
-    <div class="card">
-      <div class="image"><img src="../nulo-supply/img/nulo4.png"
-          alt="camiseta preta com a logo escrito nulo em branco"><span class="text"></span></div>
-      <span class="title">Camiseta Nulo Black</span>
-      <span class="price">R$70,00</span>
-    </div>
-  </div>
+
+  </section>
+
+  <section id="section4">
+    <h2>Seção 3</h2>
+    <p>Conteúdo da seção 3.</p>
+  </section>
+
   <footer>
     Direitos reservados aos alunos da Fatec Rubens Lara - Baixada Santista
   </footer>

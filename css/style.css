@@ -75,6 +75,7 @@ footer {
 }
 
 header {
+  top: 0;
   height: 80px;
   display: flex;
   align-items: center;
@@ -136,6 +137,7 @@ nav.full {
   font-weight: bold;
   background: #111;
   color: white;
+
 }
 
 .card {
@@ -220,8 +222,6 @@ nav.full {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   background-color: #ffffff;
   width: 100%;
   height: 50px;
@@ -260,20 +260,43 @@ header img {
 
 .carta {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 65vh;
   width: 30vw;
   flex-direction: column;
-  gap: 35px;
   background: #e3e3e3;
   box-shadow: 16px 16px 32px #c8c8c8,
     -16px -16px 32px #fefefe;
   border-radius: 8px;
 }
+.back-icon{
+  color: #000;
+}
+
+.login-title {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title-icon {
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: 3rem;
+}
+
+.login-content-box {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .inputBox {
-  position: relative;
   width: 250px;
 }
 
@@ -293,7 +316,6 @@ header img {
 
 .inputBox span {
   margin-top: 5px;
-  position: absolute;
   left: 0;
   transform: translateY(-4px);
   margin-left: 10px;
@@ -324,7 +346,8 @@ header img {
   border-radius: 8px;
 }
 
-.enter, .link-button {
+.enter,
+.link-button {
   height: 45px;
   width: 100px;
   border-radius: 5px;
@@ -352,10 +375,6 @@ header img {
   /* float: left; */
 }
 
-.container {
-  /* margin-top: 30%; */
-}
-
 aside {
   display: flex;
   justify-content: center;
@@ -367,7 +386,7 @@ aside {
 .background-login {
   width: 50vw;
   height: 100vh;
-  background-image: url('../img/bkg.jpg');
+  background-image: url('../img/img2.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -460,114 +479,46 @@ aside {
   align-items: center;
   width: 50%;
 }
+
 .background-cadastro {
   width: 50vw;
   height: 100vh;
-  background-image: url('../img/pixonulo.jpg');
+  background-image: url('../img/img1.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-
-/*------------------------------------------------------------------------------*/
-
-* {
-  box-sizing: border-box
-}
-
 .mySlides {
-  display: none
+  display: none;
 }
 
-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
 .slideshow-container {
-  height: 50vh;
-  width: 100%;
   position: relative;
-  margin: auto;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  padding: 1rem 2rem;
-  margin: 0rem 1rem;
-  border-radius: 20px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 20px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  position: absolute;
+.slideshow-container img {
+  height: 70vh;
   width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
-.dot-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-}
-
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #737373;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active {
   background-color: #000000;
 }
 
-/* Fading animation */
 .fade {
-  height: 100%;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @keyframes fade {
@@ -580,19 +531,56 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
 
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
+section {
+  height: 100vh;
 }
 
-.back-icon {
-  font-size: 24px;
-  color: #000; /* Altere a cor conforme necessário */
-  margin-left: 30px;
+/*section de contato*/
+/*<------------------------------------------------------------------------------------------------------->*/
+
+
+.contact-page {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
 }
 
+#section3 {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+}
+
+.image-content {
+  width: 50%;
+}
+
+.image-content img {
+  height: 100vh;
+  width: 100%;
+}
+
+.contact-text {
+  position: absolute;
+  left: 750px;
+  top: 1600px;
+  margin: 35px;
+  font-weight: 500;
+  font-size: 18px;
+
+  text-align: center;
+}
+
+.link-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.email-icon {
+  position: absolute;
+  width: 34px;
+  height: 25.5px;
+  color: white;
+}

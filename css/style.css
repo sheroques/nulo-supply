@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 20px;
+}
+
 .icon-container {
   width: 70px;
   display: flex;
@@ -268,6 +278,22 @@ header img {
     -16px -16px 32px #fefefe;
   border-radius: 8px;
 }
+
+.content-singup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+}
+
+.content-article-singup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .back-icon{
   color: #000;
 }
@@ -281,6 +307,7 @@ header img {
 }
 
 .login-title-icon {
+  margin-top: 3.5rem;
   height: 10vh;
   display: flex;
   align-items: flex-end;
@@ -293,7 +320,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .inputBox {
@@ -358,7 +385,6 @@ header img {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  margin-bottom: 1em;
   width: 120px;
 }
 
@@ -397,13 +423,20 @@ aside {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
-  display: block;
   font-weight: bold;
   font-size: x-large;
-  margin-top: 1.5em;
-  padding: 2%
 }
 
+.icon-back {
+  width: 100%;
+  height: auto;
+}
+
+.icon-back img{
+  cursor: pointer;
+  width: 40px;
+  height: auto;
+}
 
 .inputBox,
 .inputBox1 {
@@ -533,18 +566,18 @@ aside {
 
 
 section {
-  height: 100vh;
+  height: 75vh;
 }
 
 /*section de contato*/
 /*<------------------------------------------------------------------------------------------------------->*/
 
-
 .contact-page {
-  align-items: center;
-  display: flex;
   width: 50%;
-  justify-content: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #section3 {
@@ -558,29 +591,55 @@ section {
 }
 
 .image-content img {
-  height: 100vh;
+  height: 75vh;
   width: 100%;
 }
 
 .contact-text {
-  position: absolute;
-  left: 750px;
-  top: 1600px;
-  margin: 35px;
-  font-weight: 500;
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contact-text h1 {
+  font-size: 3rem;
+}
+
+.contact-text p {
+  margin: 0;
   text-align: center;
+  font-size: 1.25rem;
+}
+
+.divisory {
+  margin: 0;
+}
+
+.icons-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  font-size: 1.2rem;
+}
+
+.icon-article img {
+  cursor: pointer;
+  width: 120px;
+  height: auto;
 }
 
 .link-button:hover {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
-.email-icon {
-  position: absolute;
-  width: 34px;
-  height: 25.5px;
-  color: white;
+.login-icon{
+  width:50px;
+  height:50px;
 }

@@ -225,10 +225,11 @@ nav.full {
 .card-container {
   display: flex;
   justify-content: space-between;
-  margin: 6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5em;
+  height: 90vh;
+  padding: 20px;
 }
 
 footer {
@@ -565,10 +566,6 @@ aside {
 }
 
 
-section {
-  height: 75vh;
-}
-
 /*section de contato*/
 /*<------------------------------------------------------------------------------------------------------->*/
 
@@ -588,10 +585,11 @@ section {
 
 .image-content {
   width: 50%;
+  height: 90vh;
 }
 
 .image-content img {
-  height: 75vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -631,7 +629,7 @@ section {
 
 .icon-article img {
   cursor: pointer;
-  width: 120px;
+  width: 85px;
   height: auto;
 }
 
@@ -642,4 +640,54 @@ section {
 .login-icon{
   width:50px;
   height:50px;
+}
+
+
+.card-about{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background-color: #c5c5c5;
+}
+
+
+.content-about {
+  width: 50%;
+  margin-left: 46.5rem;
+  margin-top: -541px;
+  text-align: justify;
+}
+
+.content-about p {
+  margin: 45px;
+}
+
+.image-about{
+  width: 50%;
+  height: 90vh;
+  background-color: #c5c5c5;
+}
+
+.image-about img{
+  width: 80%;
+  height: 90%;
+  margin-left: 50px;
+  border-radius: 50%;
+  margin-top: 36px;
+}
+
+.content-about h1{
+    font-size: 3rem;
+    margin: 45px;
+}
+
+footer{
+  background-color: #000;
+  height: 20vh;
+  display: inline-block;
+}
+
+footer img{
+  height: 30px;
+  width: 30px;
 }

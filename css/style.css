@@ -177,6 +177,7 @@ nav.full {
   font-weight: 600;
   text-transform: uppercase;
   opacity: 0;
+  
 }
 
 .card .title {
@@ -642,4 +643,31 @@ section {
 .login-icon{
   width:50px;
   height:50px;
+}
+//-----------------------------------------------------------------------
+.card-about{
+  height: 90vh;
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.content-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.image-about img{
+width: 48%;
+height: 70vh;
+border-radius: 50%;
+}
+.content-about h1{
+  font-size: 3rem;
 }

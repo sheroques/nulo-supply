@@ -651,11 +651,9 @@ aside {
     background-color: #c5c5c5;
 }
 
-
 .content-about {
   width: 50%;
-  margin-left: 46.5rem;
-  margin-top: -541px;
+  margin-top: 75px;
   text-align: justify;
 }
 
@@ -682,12 +680,28 @@ aside {
     margin: 45px;
 }
 
-footer{
-  background-color: #000;
-  height: 20vh;
+footer {
+  background-color: #000000;
+  height: 80px;
 }
 
-footer img{
-  height: 30px;
-  width: 30px;
+.icon-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icon-list li:last-child {
+  margin-right: 0;
+}
+
+.icon-list li img {
+  width: 60px;
+  height: 60px;
+  margin: 7px;
 }

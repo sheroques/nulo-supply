@@ -187,6 +187,45 @@
           As coleções da Nulo são cuidadosamente projetadas para refletir a energia das ruas e as tendências emergentes
           da cultura urbana. Combinando elementos da moda streetwear com influências da arte, música e movimentos
           subculturais, cada peça da marca é uma declaração de estilo individualista.</p>
+    <button id="mostrarTabela">Tamanho das camisetas</button>
+
+    <table id="tabelaTamanhos" style="display: none;">
+        <tr>
+            <th>Tamanho</th>
+            <th>Medidas</th>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>Altura: 70cm, Largura: 50cm, Manga: 20cm</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>Altura: 72.5cm, Largura: 54cm, Manga: 21cm</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>Altura: 75cm, Largura: 58cm, Manga: 22cm</td>
+        </tr>
+        <tr>
+            <td>GG</td>
+            <td>Altura: 77.5cm,  Largura: 62cm, Manga: 23cm</td>
+        </tr>
+        <tr>
+          <td>XG</td>
+          <td>Altura: 80cm,  Largura: 66cm,  Manga: 24cm</td>
+      </tr>
+    </table>
+
+    <script>
+        document.getElementById("mostrarTabela").addEventListener("click", function() {
+            var tabela = document.getElementById("tabelaTamanhos");
+            if (tabela.style.display === "none") {
+                tabela.style.display = "table";
+            } else {
+                tabela.style.display = "none";
+            }
+        });
+    </script>
       </div>
     </div>
   </section>

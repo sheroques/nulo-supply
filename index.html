@@ -11,13 +11,13 @@
       media="screen"
     />
     <title>NULØ Supply</title>
-    <link rel="shortcut icon" href="img/Nulo-Logo.png"/>
+    <link rel="shortcut icon" href="img/Nulo-Logo.png" />
     <script src="script.js"></script>
   </head>
 
   <body>
     <header>
-      <img src="../nulo-supply/img/logo.png" alt="logo da marca"/>
+      <img src="../nulo-supply/img/logo.png" alt="logo da marca" />
       <div class="search_container">
         <p class="search_title"></p>
         <input
@@ -29,11 +29,15 @@
       <div class="icones-header">
         <a href="login.html"
           ><img
-            src="../nulo-supply/img/shopping-cart_icon-icons.com_72552.png" alt="icone de carrinho de compras"
+            src="../nulo-supply/img/shopping-cart_icon-icons.com_72552.png"
+            alt="icone de carrinho de compras"
             class="carrinho-icon"
         /></a>
         <a href="login.html"
-          ><img src="../nulo-supply/img/profile-button.png"  alt="icone de login"  class="login-icon"
+          ><img
+            src="../nulo-supply/img/profile-button.png"
+            alt="icone de login"
+            class="login-icon"
         /></a>
       </div>
     </header>
@@ -47,13 +51,22 @@
     <section>
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="img/aboutimg.jpeg"  alt="imagem de tres rapazes sentados em uma escada"/>
+          <img
+            src="img/aboutimg.jpeg"
+            alt="imagem de tres rapazes sentados em uma escada"
+          />
         </div>
         <div class="mySlides fade">
-          <img src="img/img3.jpeg" alt="tres rapazes vestindo camisetas pretas sorrindo sentados na escada"/>
+          <img
+            src="img/img3.jpeg"
+            alt="tres rapazes vestindo camisetas pretas sorrindo sentados na escada"
+          />
         </div>
         <div class="mySlides fade">
-          <img src="img/img4.jpeg" alt="rapaz usando camiseta preta com estampa de sol e segurando o " />
+          <img
+            src="img/img4.jpeg"
+            alt="rapaz usando camiseta preta com estampa de sol e segurando o "
+          />
         </div>
       </div>
       <br />
@@ -174,37 +187,59 @@
 
       <section id="section3">
         <div class="image-content">
-          <img src="../nulo-supply/img/img5.jpeg"  alt=" 2 rapazes fazendo sinal de chifre com as maos"/>
+          <img
+            src="../nulo-supply/img/img5.jpeg"
+            alt=" 2 rapazes fazendo sinal de chifre com as maos"
+          />
         </div>
         <div class="contact-page">
           <div class="contact-text">
-            <h1>Entre em contato</h1>
-            <p>
-              Nosso time está disponível de segunda a sábado das 08h às 20h,
-              exceto feriados.
-            </p>
-            <p>Desculpe-nos, nosso tempo de resposta está acima do esperado.</p>
-          </div>
-          <div class="icons-contact">
-            <article class="icon-article">
-              <img class="email-icon" src="../nulo-supply/img/mail-icon.png"  alt="icone em formato de carta" />
-              <p class="email-text">
-                Faça sua solicitação de atendimento por e-mail
-              </p>
-            </article>
-            <hr class="divisory" />
-            <article class="icon-article">
-              <img class="zap-icon" src="../nulo-supply/img/whats-icon.png"  alt="icone do whatsapp"/>
-              <p class="zap-text">Realize seus pedidos via whatsapp</p>
-            </article>
+            <h2>Fale conosco</h2>
+            <form action="" method="POST">
+              <label for="Nome">Nome</label>
+              <input type="text" name="Nome" id="Nome" placeholder="Nome" />
+
+              <label for="Email">Email</label>
+              <input type="text" name="Email" id="Email" placeholder="Email" />
+
+              <label for="Telefone">Telefone</label>
+              <input
+                type="text"
+                name="Telefone"
+                id="Telefone"
+                placeholder="Telefone"
+              />
+
+              <label for="Assunto">Assunto</label>
+              <select name="Assunto" id="Assunto">
+                <option value="0">Selecione o Assunto</option>
+                <option value="Entrega">Entrega</option>
+                <option value="Avaliação">Avaliação</option>
+                <option value="Duvidas">Duvidas</option>
+                <option value="Outros">Outros</option>
+              </select>
+
+              <label for="Mensagem">Mensagem</label>
+              <textarea
+                name="Mensagem"
+                id="Mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Área de Texto"
+              ></textarea>
+
+              <button id="contact-form-button" type="submit">Enviar</button>
+            </form>
           </div>
         </div>
       </section>
-
       <section id="section4">
         <div class="card-about">
           <div class="image-about">
-            <img src="../nulo-supply/img/aboutimg.jpeg" alt="imagem de tres rapazes sentados em uma escada" />
+            <img
+              src="../nulo-supply/img/aboutimg.jpeg"
+              alt="imagem de tres rapazes sentados em uma escada"
+            />
           </div>
           <div class="content-about">
             <h1>Sobre nós</h1>
@@ -229,11 +264,11 @@
 
             <table id="tabelaTamanhos" style="display: none">
               <caption>
-              <tr>
-                <th>Tamanho</th>
-                <th>Medidas</th>
-              </tr>
-            </caption>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>Medidas</th>
+                </tr>
+              </caption>
               <tr>
                 <td>P</td>
                 <td>Altura: 70cm, Largura: 50cm, Manga: 20cm</td>
@@ -259,27 +294,28 @@
         </div>
       </section>
       <section>
-      <footer>
-        <ul class="icon-list">
-          <li>
-            <a href="https://www.instagram.com/nulosupply/"
-              ><img src="../nulo-supply/img/ig.png" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://api.whatsapp.com/send/?phone=5513981928505&text&type=phone_number&app_absent=0"
-              ><img src="../nulo-supply/img/whats-icon.png" alt="Whatsapp"
-            /></a>
-          </li>
-        </ul>
-      </footer>
+        <footer>
+          <ul class="icon-list">
+            <li>
+              <a href="https://www.instagram.com/nulosupply/"
+                ><img src="../nulo-supply/img/ig.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send/?phone=5513981928505&text&type=phone_number&app_absent=0"
+                ><img src="../nulo-supply/img/whats-icon.png" alt="Whatsapp"
+              /></a>
+            </li>
+          </ul>
+        </footer>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          slide();
+          showTable();
+        });
+      </script>
     </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        slide();
-        showTable();
-      });
-    </script>
   </body>
 </html>

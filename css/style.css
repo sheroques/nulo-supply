@@ -597,7 +597,17 @@ aside {
   align-items: center;
 }
 
-.contact-text h1 {
+.contact-text form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.contact-text form textarea {
+  resize: none;
+}
+
+.contact-text h2 {
   font-size: 3rem;
 }
 
@@ -605,6 +615,12 @@ aside {
   margin: 0;
   text-align: center;
   font-size: 1.25rem;
+}
+
+.contact-text button {
+  height: 35px;
+  background-color: #000;
+  line-height: 0;
 }
 
 .divisory {

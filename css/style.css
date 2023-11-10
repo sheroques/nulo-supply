@@ -616,8 +616,6 @@ aside {
 
 .contact-text button {
   height: 35px;
-  background-color: #000;
-  line-height: 0;
 }
 
 .divisory {
@@ -765,6 +763,7 @@ aside {
   top: 50%;
   transform: translateY(-50%);
 }
+<<<<<<< HEAD
 #enviarFormulario {
   background-color: gray;
   color: white;
@@ -833,3 +832,5 @@ form{
   box-shadow: 2px 5px 0 0 white;
 }
 
+=======
+>>>>>>> d4f14bc96dc926df5927484641b05e3976e32598

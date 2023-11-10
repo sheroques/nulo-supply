@@ -228,11 +228,12 @@ nav.full {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
-  height: 50px;
   text-align: center;
-  align-items: center;
-  align-content: center;
+  align-items: end;
+  align-content: end;
   background-color: #000000;
   height: 80px;
 }
@@ -764,3 +765,71 @@ aside {
   top: 50%;
   transform: translateY(-50%);
 }
+#enviarFormulario {
+  background-color: gray;
+  color: white;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid gray;
+  box-shadow: 0 0 0 0 black;
+  margin-left: 45px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3%;
+  margin-top: 5%;
+}
+
+#enviarFormulario:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 white;
+}
+
+#enviarFormulario:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 gray;
+}
+
+form{ 
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+#nome,#email,#telefone,#mensagem{
+  border-radius: 50px;
+  padding: 1%;
+  margin-bottom: 3%;
+  border-color: white;
+  color: white;
+}
+#reqForm, #reqForm1, #reqForm2{
+  background-color: gray;
+  color: #fff;
+  padding: 10px 20px;
+  border:white;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+#reqForm:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 white;
+}
+#reqForm1:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 white;
+}
+#reqForm2:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 white;
+}
+

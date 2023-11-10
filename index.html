@@ -212,41 +212,31 @@
         <div class="contact-page">
           <div class="contact-text">
             <h2>Fale conosco</h2>
-            <form action="" method="POST">
-              <label for="Nome">Nome</label>
-              <input type="text" name="Nome" id="Nome" placeholder="Nome" />
 
-              <label for="Email">Email</label>
-              <input type="text" name="Email" id="Email" placeholder="Email" />
+    <form>
+      <div class="nomeForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required aria-label="Nome" aria-required="true" autocomplete="off" placeholder="Digite seu nome aqui"/>
+        <button id="reqForm" type="submit">Enviar</button>
+      </div>
+        <div class="emailForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-label="Email" aria-required="true" autocomplete="off" placeholder="Digite seu email aqui"/>
+        <button id="reqForm1" type="submit">Enviar</button>
+      </div>
+        <div class="telefoneForm">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" aria-label="Telefone" autocomplete="off" placeholder="Digite seu telefone aqui" />
+        <button id="reqForm2" type="submit">Enviar</button>
+      </div>
+      
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required aria-label="Mensagem" aria-required="true" autocomplete="off" placeholder="Digite aqui a mensagem desejada"></textarea>
+      
+        <button id="enviarFormulario" type="submit">Enviar</button>
+    </form>
 
-              <label for="Telefone">Telefone</label>
-              <input
-                type="text"
-                name="Telefone"
-                id="Telefone"
-                placeholder="Telefone"
-              />
 
-              <label for="Assunto">Assunto</label>
-              <select name="Assunto" id="Assunto">
-                <option value="0">Selecione o Assunto</option>
-                <option value="Entrega">Entrega</option>
-                <option value="Avaliação">Avaliação</option>
-                <option value="Duvidas">Duvidas</option>
-                <option value="Outros">Outros</option>
-              </select>
-
-              <label for="Mensagem">Mensagem</label>
-              <textarea
-                name="Mensagem"
-                id="Mensagem"
-                cols="30"
-                rows="10"
-                placeholder="Área de Texto"
-              ></textarea>
-
-              <button id="contact-form-button" type="submit">Enviar</button>
-            </form>
           </div>
         </div>
       </section>
@@ -280,12 +270,12 @@
             <button id="mostrarTabela">Mostrar medidas</button>
 
             <table id="tabelaTamanhos" style="display: none">
-              <caption>
+              <caption> Tamanho das camisetas</caption>
                 <tr>
                   <th>Tamanho</th>
                   <th>Medidas</th>
                 </tr>
-              </caption>
+          
               <tr>
                 <td>P</td>
                 <td>Altura: 70cm, Largura: 50cm, Manga: 20cm</td>
@@ -311,21 +301,6 @@
         </div>
       </section>
       <section>
-        <footer>
-          <ul class="icon-list">
-            <li>
-              <a href="https://www.instagram.com/nulosupply/"
-                ><img src="../nulo-supply/img/ig.png" alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5513981928505&text&type=phone_number&app_absent=0"
-                ><img src="../nulo-supply/img/whats-icon.png" alt="Whatsapp"
-              /></a>
-            </li>
-          </ul>
-        </footer>
       </section>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
